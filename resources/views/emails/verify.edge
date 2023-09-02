@@ -1,0 +1,13 @@
+@layout('layouts/app')
+
+@section('content')
+<section class="flex justify-center py-10">
+  <div style="width:22rem">
+    <h1 class="text-center font-bold text-4xl mt-5"> welcome to TACHIKOGRAM <br> {{ user.name }} </h1>
+    <img class="px-10 py-10" src="https://media.giphy.com/media/f4V2mqvv0wT9m/giphy.gif" alt="hello">
+    <p class="text-center">
+      <a class="text-center text-blue-500 mt-5 py-5" href="{{url}}">click here to verify your email</a>
+    </p>
+  </div>
+</section>
+@endsection

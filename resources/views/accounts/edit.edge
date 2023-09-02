@@ -1,0 +1,17 @@
+@layout('layouts/app')
+@section('content')
+  <div class="mt-20 bg-white border rounded p-5">
+    <h1 class="text-center text-2xl my-4">update profile</h1>
+    <form action="" method="post" enctype="multipart/form-data" class="py-2">
+      <div>
+        <p class="my-2">Details</p>
+        <textarea name="details" class="border w-full p-3" rows="4" placeholder="type here">{{auth.user.details}}</textarea>
+      </div>
+      <div class="my-5">
+        <p class="my-2">upload ur profile photo</p>
+        <input type="file" name="avatar" class="w-full">
+      </div>
+      <input type="submit" value="update" class="px-2 py-1 bg-blue-500 text-white border rounded">
+    </form>
+  </div>
+@endsection

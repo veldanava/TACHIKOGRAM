@@ -1,0 +1,12 @@
+@layout('layouts/app')
+
+@section('content')
+  @if(auth.isAuthenticated)
+  <h1>{{auth.user.username}}</h1>
+  <form action="/logout" method="post">
+    <button type="submit">Sign Out</button>
+  </form>
+  @else
+    <a href="/login">login</a>
+  @endif
+@endsection
